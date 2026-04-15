@@ -6,7 +6,7 @@ url = input("url'i girin : ")
 
 #htp(s) Kontrolü
 if not url.startswith("https://") and not url.startswith("http://") :
-  url=u."http://"+url
+  url="http://"+url
 response = requests.get(url)
 soup=BeautifulSoup(response.text , 'html.parser')
 
